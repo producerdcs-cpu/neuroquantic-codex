@@ -3,7 +3,8 @@
 
 > **Onde a linguagem encontra a consciência.**
 
-**Projeto fundador:** Dinoel da Costa Soares — DcsProducer  
+**Projeto fundador:** Dinoel da Costa Soares  
+**Identidade autoral:** **© DcsProducer®**  
 **Status:** `BUILD 0.1 — GENESIS`  
 **Lifecycle:** Experimental / Active Development  
 **Interface:** Web  
@@ -143,7 +144,8 @@ Os repositórios relacionados ao legado **NeuroLumen** e **NeuroLeitor** permane
 
 ## Autor
 
-**Dinoel da Costa Soares — DcsProducer**
+**Dinoel da Costa Soares**  
+**© DcsProducer®**
 
 Concepção e direção do **NeuroQuantic Codex — Status Quo Versátil · Lumen**.
 
