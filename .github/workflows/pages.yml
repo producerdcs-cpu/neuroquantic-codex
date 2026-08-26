@@ -24,6 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Publish exactly one Pages artifact per fresh workflow run.
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
