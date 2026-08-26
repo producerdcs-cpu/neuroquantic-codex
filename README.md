@@ -5,27 +5,46 @@
 
 **Projeto fundador:** Dinoel da Costa Soares  
 **Identidade autoral:** **© DcsProducer®**  
-**Status:** `BUILD 0.1 — GENESIS`  
+**Estado atual:** `BUILD 1.0.0 — GENESIS EXPERIENCE ENGINE`  
 **Lifecycle:** Experimental / Active Development  
 **Interface:** Web  
-**Arquitetura:** Modular e evolutiva
+**Arquitetura:** Modular, evolutiva e orientada a experiências
 
 ## Visão
 O **NeuroQuantic Codex** é um ecossistema experimental de linguagem, poesia, filosofia e engenharia de software destinado a explorar múltiplas perspectivas da experiência humana. Cada entrada pode tornar-se um Códice; cada Códice pode abrir novas perguntas.
 
 > **Não queremos apenas responder perguntas. Queremos construir novas perguntas.**
 
-## Genesis já funcional
-O protótipo Web atual já possui uma primeira camada executável no navegador:
+## Estado atual — 2026
+O projeto atravessou a fase de fundação conceitual e entrou na construção da primeira experiência interativa persistente.
 
+### Núcleos existentes
 - **CODEX** — criação e arquivo local de fragmentos;
 - **ENIGMA ENGINE** — enigmas, pistas e interpretação;
 - **LUMEN ENGINE** — síntese local entre texto, perspectiva e enigma;
 - **POETA / ARQUITETO** — lentes interpretativas preparadas;
 - **TRANSLATOR** — contrato arquitetural inicial para a camada multilíngue;
+- **MEMORY LOOP** — registro e linhagem de experiências/enigmas;
+- **GENESIS EXPERIENCE ENGINE** — estado persistente da primeira Genesis Experience;
+- **LUMEN POSSIBILITY** — camada inicial para possibilidades emergentes por acaso;
 - **Design System** — interface responsiva e acessível.
 
-> **Nota técnica:** os engines atuais são protótipos locais determinísticos. Ainda não há modelo de IA, tradução por API ou memória semântica em nuvem.
+> **Nota técnica:** os engines atuais ainda são protótipos locais. Não há modelo de IA generativa, tradução por API ou memória semântica em nuvem integrada neste estágio.
+
+## Genesis Experience — CODEX-0001
+**Codename:** *O Arquiteto e o Enigma da Luz*  
+**Modo:** `Poeta → Enigma → Lumen`  
+**Estado:** `exploring`
+
+A Genesis Experience transforma a interação em ciclo:
+
+```text
+PERGUNTA → EXPERIÊNCIA → RESPOSTA DO AUTOR → LUMEN
+     ↑                                  ↓
+     └──── NOVA PERGUNTA ← POSSIBILIDADE ←┘
+```
+
+O princípio autoral é preservado: quando a pergunta é dirigida ao Autor, **o sistema não responde por ele**. A resposta do Autor pode tornar-se um novo eco, memória, enigma ou possibilidade.
 
 ## Arquitetura Cognitiva
 ```text
@@ -40,42 +59,45 @@ O protótipo Web atual já possui uma primeira camada executável no navegador:
                      LUMEN
                        │
                        ▼
-                 CONVERGÊNCIA
+              POSSIBILIDADES
+                       │
+                    🎲 ACASO
                        │
                        ▼
-                     CODEX
+                    CODEX
+                       │
+                       ▼
+                 MEMORY LOOP
                        │
                        ▼
                  NOVA PERGUNTA
                        │
-                       ▼
-              FUTURO AI ORCHESTRATOR
+                       └────────────↺
 ```
 
 ## Sistema de Códices
 Tipos iniciais: `poema`, `poesia`, `pensamento`, `experiencia`, `enigma`, `manifesto`, `fragmento` e `pergunta`.
 
-Cada Códice recebe um identificador incremental (`CODEX-001`, `CODEX-002`...) e pode possuir um codinome, como `ARCANO / GENESIS`, `CODEX AURORA` ou `MANUSCRITO VII`.
+Cada Códice recebe um identificador incremental e pode possuir um codinome. O primeiro percurso narrativo é **CODEX-0001 — O Arquiteto e o Enigma da Luz**.
 
-## Roadmap
+## Roadmap oficial
 | Build | Codinome | Objetivo | Estado |
 |---|---|---|---|
-| 0.1 | **Genesis** | Fundação + WebApp experimental | 🟢 Ativo |
-| 0.1.1 | **Codex Engine** | Criação e armazenamento local | 🟢 Implementado |
-| 0.1.2 | **Codex UI** | Interface de criação e arquivo | 🟢 Implementado |
-| 0.1.3 | **Design System** | Responsividade + acessibilidade | 🟢 Implementado |
-| 0.1.4 | **Enigma Engine** | Biblioteca, pistas e interpretação | 🟢 Implementado |
-| 0.1.5 | **Lumen Engine** | Síntese e novas perguntas | 🟢 Implementado |
-| 0.1.6 | **Translator** | Camada multilíngue | 🟡 Próximo |
-| 0.2 | **Codex Graph** | Relações entre Códices | 🔴 Planejado |
-| 0.3 | **AI Core** | Integração de modelos de IA | 🔴 Planejado |
-| 0.4 | **Agents** | Poeta, Arquiteto, Lumen etc. | 🔴 Planejado |
-| 0.5 | **Memory** | Memória contextual/semântica | 🔴 Planejado |
-| 0.9 | **MVP** | Produto mínimo funcional | 🔴 Futuro |
-| 1.0 | **NeuroQuantic Codex** | Plataforma pública | 🔴 Futuro |
-| 2.0 | **Lumen Ecosystem** | Apps e ecossistema ampliado | 🔴 Futuro |
+| 0.1.x | **Genesis Foundation** | Fundação + WebApp experimental | 🟢 Consolidado |
+| 0.9.x | **Experience UI / Lumen Bridge** | Interface, experiência, memória e ponte Lumen | 🟢 Consolidado como base |
+| 1.0.0 | **Genesis Experience Engine** | Motor persistente da primeira Genesis Experience | 🟢 Implementado |
+| 1.0.1 | **Genesis Experience UI** | Interface interativa ponta a ponta | 🟡 Próximo |
+| 1.0.2 | **Memory Loop Integration** | Integrar Genesis, memória e linhagem | 🟡 Próximo |
+| 1.0.3 | **Lumen Possibility Engine** | Possibilidades, acaso e destinos | 🟡 Em construção conceitual |
+| 1.0.4 | **End-to-End Experience** | Fluxo completo da experiência | 🟡 Planejado |
+| 1.1.x | **Codex Graph / Lineage** | Grafo de relações entre Códices | 🔴 Planejado |
+| 1.2.x | **Multilingual Lumen** | Tradução automática orientada ao usuário | 🔴 Planejado |
+| 2.x | **NeuroQuantic Experience Platform** | Plataforma ampliada e futura versão App | 🔴 Futuro |
 
-## Estrutura
+### Critério para declarar a versão 1.0 completa
+`BUILD 1.0.0` é o marco do **Engine**, não uma declaração de plataforma final. A versão 1.0 completa somente será considerada quando Engine + UI + Memory Loop + Lumen + persistência + fluxo ponta a ponta estiverem integrados e testados.
+
+## Estrutura atual
 ```text
 neuroquantic-codex/
 ├── README.md
@@ -85,7 +107,10 @@ neuroquantic-codex/
 ├── js/
 │   ├── app.js
 │   ├── enigma-engine.js
-│   └── lumen-engine.js
+│   ├── lumen-engine.js
+│   ├── codex-memory-loop.js
+│   ├── codex-memory-loop-ui.js
+│   └── genesis-experience.js
 ├── codex/
 ├── docs/
 └── assets/
@@ -111,4 +136,4 @@ Concepção e direção do **NeuroQuantic Codex — Status Quo Versátil · Lume
 > *Toda grande obra começa quando alguém decide transformar uma pergunta em arquitetura.*
 
 ---
-**NeuroQuantic Codex™ · BUILD 0.1 — GENESIS**
+**NeuroQuantic Codex™ · BUILD 1.0.0 — GENESIS EXPERIENCE ENGINE**
