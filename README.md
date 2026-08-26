@@ -5,7 +5,7 @@
 
 **Projeto fundador:** Dinoel da Costa Soares  
 **Identidade autoral:** **© DcsProducer®**  
-**Estado atual:** `BUILD 1.0.3 — LUMEN POSSIBILITY ENGINE`  
+**Estado atual:** `BUILD 1.0.3 — LUMEN POSSIBILITY ENGINE · PUBLIC PREVIEW`  
 **Lifecycle:** Experimental / Active Development  
 **Interface:** Web estática / local-first  
 **Arquitetura:** Modular, evolutiva e orientada a experiências
@@ -16,7 +16,7 @@ O **NeuroQuantic Codex** é um ecossistema experimental de linguagem, poesia, fi
 > **Não queremos apenas responder perguntas. Queremos construir novas perguntas.**
 
 ## Estado atual — 2026
-A primeira Genesis Experience já possui motor persistente, interface interativa, **Lumen Pause**, memória local e possibilidade contextual. O projeto está entrando na fase de validação do fluxo ponta a ponta.
+A primeira Genesis Experience está publicada em **GitHub Pages** como **Public Preview**. Ela possui motor persistente local, interface interativa, Lumen Pause, memória local e possibilidade contextual. O próximo marco é validar o fluxo ponta a ponta antes de declarar a primeira 1.0 completa.
 
 ### Núcleos existentes
 - **CODEX** — criação e arquivo local de fragmentos;
@@ -49,6 +49,13 @@ PERGUNTA → EXPERIÊNCIA → RESPOSTA DO AUTOR → LUMEN PAUSE
 
 O princípio autoral é preservado: **o sistema não responde pelo Autor**. A resposta do Autor pode tornar-se eco, memória, enigma ou possibilidade.
 
+## Public Preview
+
+**Site:** `https://producerdcs-cpu.github.io/neuroquantic-codex/`
+
+O site é público e experimental. Não inserir dados sensíveis. A memória atual
+fica no navegador e não representa uma conta ou memória de servidor.
+
 ## Lumen Pause
 O `Lumen Pause` é um estado funcional, não uma ausência de implementação.
 
@@ -60,7 +67,7 @@ Durante a pausa, a experiência oferece quatro portas:
 - **Continuar** — prosseguir sem forçar uma conclusão.
 
 ## Memória e linhagem
-A Genesis agora utiliza o **Memory Layer ativo** do frontend. Registros recebem `parentId`, `origin`, profundidade e podem ser percorridos por `lineage()`.
+A Genesis utiliza o **Memory Layer ativo** do frontend. Registros recebem `parentId`, `origin`, profundidade e podem ser percorridos por `lineage()`.
 
 A memória é **local ao navegador** neste estágio. Ela não é uma memória de servidor e não deve ser confundida com memória semântica em nuvem.
 
@@ -103,19 +110,55 @@ A memória é **local ao navegador** neste estágio. Ela não é uma memória de
 | 1.0.0 | **Genesis Experience Engine** | Motor persistente | 🟢 Implementado |
 | 1.0.1 | **Genesis Experience UI** | Interface + Lumen Pause | 🟢 Implementado |
 | 1.0.2 | **Memory Loop Integration** | Memória e linhagem | 🟢 Integrado ao Memory Layer |
-| 1.0.3 | **Lumen Possibility Engine** | Contexto + acaso + possibilidades | 🟢 Implementado |
+| 1.0.3 | **Lumen Possibility Engine** | Contexto + acaso + possibilidades | 🟢 Implementado / Public Preview |
 | 1.0.4 | **End-to-End Experience** | Validar fluxo completo | 🟡 **PRÓXIMO** |
+| 1.0.5 | **Hardening & Accessibility** | Segurança, acessibilidade e regressão | 🟡 Próximo gate |
 | 1.1.x | **Codex Graph / Lineage** | Grafo de relações | 🔴 Planejado |
 | 1.2.x | **Multilingual Lumen** | Evolução multilíngue | 🔴 Planejado |
 | 2.x | **NeuroQuantic Experience Platform** | Plataforma ampliada / futura App | 🔴 Futuro |
 
 ### Critério para declarar a versão 1.0 completa
-A versão 1.0 completa somente será considerada quando **Engine + UI + Memory Layer + Lumen + persistência + fluxo ponta a ponta** estiverem integrados e testados.
+A versão 1.0 completa somente será considerada quando **Engine + UI + Memory Layer + Lumen + persistência + fluxo ponta a ponta + validação de regressão** estiverem integrados e testados.
+
+## Segurança e estabilidade
+
+- nenhum segredo ou API key no frontend;
+- memória atual somente local;
+- workflow Pages com permissões mínimas;
+- `SECURITY.md` define divulgação coordenada;
+- recomenda-se habilitar **Private Vulnerability Reporting**;
+- recomenda-se proteger a branch `main` e exigir checks antes de merges;
+- mudanças críticas devem passar por validação antes do deploy;
+- integrações futuras com IA/backend devem manter segredos no servidor;
+- dados sensíveis não são suportados no Public Preview.
+
+## Autoria e licenciamento
+
+Nesta fase, o projeto **não usa MIT**. O repositório possui um aviso proprietário
+em [`LICENSE`](LICENSE), preservando a autoria e permitindo que a estratégia de
+licenciamento seja definida posteriormente.
+
+A visibilidade pública do código não equivale a uma licença geral de reutilização.
+Para reutilização comercial, derivação substancial ou redistribuição, é necessária
+a autorização do titular, salvo futura licença específica.
+
+Consulte [`docs/IP-NOTICE.md`](docs/IP-NOTICE.md).
+
+## Documentação técnica
+
+- [`docs/STATUS.md`](docs/STATUS.md) — checkpoint do projeto;
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — arquitetura e limites;
+- [`docs/RELEASE-CHECKLIST.md`](docs/RELEASE-CHECKLIST.md) — critérios de release;
+- [`docs/PRIVACY.md`](docs/PRIVACY.md) — limites de privacidade do Public Preview;
+- [`SECURITY.md`](SECURITY.md) — segurança e vulnerabilidades;
+- [`LICENSE`](LICENSE) — aviso de propriedade intelectual.
 
 ## Estrutura principal
 ```text
 neuroquantic-codex/
 ├── README.md
+├── LICENSE
+├── SECURITY.md
 ├── index.html
 ├── css/
 │   └── design-system.css
@@ -132,26 +175,11 @@ neuroquantic-codex/
 │   └── workflows/
 │       └── pages.yml
 ├── codex/
-├── docs/
-└── assets/
+└── docs/
 ```
-
-## Publicação
-O repositório é público e possui workflow de **GitHub Pages** preparado para publicação automática a partir da `main`. A publicação depende de o Pages estar configurado no repositório para usar **GitHub Actions**.
-
-**Destino esperado:**
-`https://producerdcs-cpu.github.io/neuroquantic-codex/`
 
 ## Legado preservado
 O **NeuroQuantic Codex** é um projeto novo e não substitui projetos anteriores. O **NeuroLumem** e o **NeuroLeitor** permanecem independentes e preservados.
-
-## Segurança e evolução
-- nenhuma chave de API no frontend ou Git;
-- segredos somente por variáveis de ambiente no futuro backend;
-- acessibilidade e responsividade desde o protótipo;
-- separação entre protótipo local e produção;
-- evolução incremental e commits rastreáveis;
-- testes antes de integrações externas críticas.
 
 ## Autor
 **Dinoel da Costa Soares**  
@@ -162,4 +190,4 @@ Concepção e direção do **NeuroQuantic Codex — Status Quo Versátil · Lume
 > *Toda grande obra começa quando alguém decide transformar uma pergunta em arquitetura.*
 
 ---
-**NeuroQuantic Codex™ · BUILD 1.0.3 — LUMEN POSSIBILITY ENGINE**
+**NeuroQuantic Codex™ · BUILD 1.0.3 — LUMEN POSSIBILITY ENGINE · PUBLIC PREVIEW**
