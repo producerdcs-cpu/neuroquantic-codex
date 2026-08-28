@@ -5,7 +5,7 @@
 
 **Projeto fundador:** Dinoel da Costa Soares  
 **Identidade autoral:** **© DcsProducer®**  
-**Estado atual:** `BUILD 1.0.3 — LUMEN POSSIBILITY ENGINE · PUBLIC PREVIEW`  
+**Estado atual:** `BUILD 1.0.5 — HARDENING & ORIGIN CONTROL · PUBLIC PREVIEW`  
 **Lifecycle:** Experimental / Active Development  
 **Interface:** Web estática / local-first  
 **Arquitetura:** Modular, evolutiva e orientada a experiências
@@ -29,6 +29,7 @@ A primeira Genesis Experience está publicada em **GitHub Pages** como **Public 
 - **GENESIS EXPERIENCE UI 1.0.1** — entrada, pausa Lumen e ações de continuidade;
 - **LUMEN PAUSE** — suspensão deliberada antes da próxima possibilidade;
 - **LUMEN POSSIBILITY** — possibilidades contextuais com acaso entre candidatas;
+- **ORIGIN CONTROL 1.0.5** — restauração explícita da origem local do CODEX-0001;
 - **CODEX TIMELINE / GRAPH** — bases visuais para movimento e relações;
 - **Design System** — interface responsiva e acessível.
 
@@ -55,6 +56,10 @@ O princípio autoral é preservado: **o sistema não responde pelo Autor**. A re
 
 O site é público e experimental. Não inserir dados sensíveis. A memória atual
 fica no navegador e não representa uma conta ou memória de servidor.
+
+## Controle de Origem
+
+A Genesis possui o comando **Restaurar Origem**. Ele limpa apenas a memória e o histórico locais deste navegador e restaura o estado canônico do CODEX-0001 — O Arquiteto e o Enigma da Luz — para `initiated`. Não apaga arquivos do GitHub, commits nem textos canônicos.
 
 ## Lumen Pause
 O `Lumen Pause` é um estado funcional, não uma ausência de implementação.
@@ -112,7 +117,7 @@ A memória é **local ao navegador** neste estágio. Ela não é uma memória de
 | 1.0.2 | **Memory Loop Integration** | Memória e linhagem | 🟢 Integrado ao Memory Layer |
 | 1.0.3 | **Lumen Possibility Engine** | Contexto + acaso + possibilidades | 🟢 Implementado / Public Preview |
 | 1.0.4 | **End-to-End Experience** | Validar fluxo completo | 🟡 **PRÓXIMO** |
-| 1.0.5 | **Hardening & Accessibility** | Segurança, acessibilidade e regressão | 🟡 Próximo gate |
+| 1.0.5 | **Hardening & Origin Control** | Reset seguro, acessibilidade, segurança e regressão | 🟢 Em andamento |
 | 1.1.x | **Codex Graph / Lineage** | Grafo de relações | 🔴 Planejado |
 | 1.2.x | **Multilingual Lumen** | Evolução multilíngue | 🔴 Planejado |
 | 2.x | **NeuroQuantic Experience Platform** | Plataforma ampliada / futura App | 🔴 Futuro |
@@ -174,6 +179,8 @@ neuroquantic-codex/
 ├── .github/
 │   └── workflows/
 │       └── pages.yml
+├── js/
+│   └── codex-origin-control.js
 ├── codex/
 └── docs/
 ```
